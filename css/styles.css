@@ -45,9 +45,11 @@ body {
 
 
 .container {
-    width: 1128px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*cap*/
@@ -93,15 +95,6 @@ body {
     color: var(--accent-color-hover);
 }
 
-.mail,
-.phone-number {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--page-color-text);
-}
-
 .mail {
     font-weight: 400;
     font-size: 16px;
@@ -109,6 +102,14 @@ body {
     letter-spacing: 0.02em;
     color: var(--page-color-text);
     margin-right: 40px;
+}
+
+.phone-number {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--page-color-text);
 }
 
 .mail:hover,
@@ -154,13 +155,13 @@ body {
 }
 
 .caption {
+    display: block;
+    width: 500px;
     font-weight: 600;
     font-size: 56px;
     line-height: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--background-color-light);}
 
 button {
@@ -173,7 +174,7 @@ button {
     letter-spacing: 0.04em;
     color: var(--background-color-light);
     background-color: var(--accent-color);
-    border: 1px solid var(--dark-theme-text);
+    border: none;
     border-radius: 4px;
     cursor: pointer;
     font-family: inherit;
@@ -254,22 +255,17 @@ button:focus {
     display: flex;
 }
 
-.img-item:hover,
-.img-item:focus {
-    border:1px solid var(--accent-color-hover);
-}
-
 .description-one {
     padding-top: 60px;
     padding-bottom: 120px;
 }
 
-.img-item {
-    border-color: 1px solid var(--dark-theme-text);
-}
-
 .subtitle {
     margin-bottom: 72px;
+}
+
+.img-item {
+    border-color: 1px solid var(--dark-theme-text);
 }
 
 .img-item:not(:last-child) {
@@ -304,16 +300,9 @@ button:focus {
     margin-bottom: 24px;
 }
 
-.photo-item-title-text {
+.photo-item-title {
+    padding-top: 32px;
     padding-bottom: 32px;
-    border-right: 1px solid var(--logo-dark-thema);
-    border-bottom: 1px solid var(--logo-dark-thema);
-    border-left: 1px solid var(--logo-dark-thema);
-}
-
-.photo-item-title-text:hover,
-.photo-item-title-text:focus {
-    border: var(--accent-color-hover);
 }
 
 .center {
@@ -326,6 +315,10 @@ button:focus {
     flex-wrap: wrap;
 }
 
+.photo-item {
+    background-color: var(--background-color-light);
+}
+
 /*footer*/
 
 .footer {
@@ -336,9 +329,15 @@ button:focus {
 
 .footer-text {
     max-width: 264px;
+    margin-top: 16px;
 }
 
 /*portfolio*/
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -350,10 +349,10 @@ button:focus {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    margin-top: 96px;
 }
 
 .button-list {
+    padding: 12px 24px;
     color: var(--accent-color);
     background-color: var(--logo-dark-thema);
     border: 1px solid var(--dark-theme-text);
@@ -366,7 +365,6 @@ button:focus {
 .portfolio-items {
     display: flex;
     margin-top: 72px;
-    margin-bottom: 120px;
     flex-wrap: wrap;
 }
 
@@ -381,7 +379,6 @@ button:focus {
 .title-text-item {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 16px;
     border-right: 1px solid var(--logo-dark-thema);
     border-bottom: 1px solid var(--logo-dark-thema);
     border-left: 1px solid var(--logo-dark-thema);
