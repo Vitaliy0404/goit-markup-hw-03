@@ -57,7 +57,10 @@ body {
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 2px solid var(--background-color-second);
+    box-shadow: 0px 2px 1px
+        rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo-first {
@@ -69,13 +72,10 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-color);
-
-    margin-right: 77px;
 }
 
 .logo-dark {
@@ -95,13 +95,16 @@ body {
     color: var(--accent-color-hover);
 }
 
+.mail-link {
+    margin-right: 40px;
+}
+
 .mail {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--page-color-text);
-    margin-right: 40px;
 }
 
 .phone-number {
@@ -125,6 +128,7 @@ body {
 .page-nav-container {
     display: flex;
     align-items: center;
+
 }
 
 .page-nav {
@@ -134,6 +138,7 @@ body {
 .menu {
     display: flex;
     align-items: center;
+    margin-left: 77px;
 }
 
 .menu-item:not(:last-child) {
@@ -345,10 +350,8 @@ button:focus {
 }
 
 .portfolio-btn {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
+    justify-content: center;
 }
 
 .button-list {
@@ -379,12 +382,8 @@ button:focus {
 .title-text-item {
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 16px;
     border-right: 1px solid var(--logo-dark-thema);
     border-bottom: 1px solid var(--logo-dark-thema);
     border-left: 1px solid var(--logo-dark-thema);
-}
-
-.title-text-item:hover,
-.title-text-item:focus {
-    border: 1px solid var(--accent-color-hover);
 }
